@@ -1,0 +1,164 @@
+diff a/a-3/css/style.css b/a-3/css/style.css	(rejected hunks)
+@@ -56,6 +56,7 @@
+   height: 50px;
+   display: flex;
+   background-color: rgb(76, 76, 132);
++  z-index: 9;
+ }
+ .gnb > li > a {
+   width: calc(600px / 4);
+@@ -125,10 +126,154 @@
+   width: 100%;
+   height: 200px;
+   background-color: rgb(255, 0, 170);
++  display: flex;
++}
++.c {
++  width: calc(100% / 3);
++  height: 100%;
++  padding: 10px;
++}
++/* 공지사항 / 갤러리 */
++.c1 {
++  display: flex;
++  align-items: flex-start;
++  position: relative;
++  background-color: #fff;
++}
++.c1 h4 {
++  width: 70px;
++  height: 35px;
++  text-align: center;
++  line-height: 35px;
++  background-color: blueviolet;
++}
++.c1 h4.on {
++  background-color: crimson;
++}
++.c1 > ul {
++  position: absolute;
++  top: 45px;
++  left: 10px;
++  padding: 10px;
++  display: none;
++}
++.c1 ul.on {
++  display: block;
++}
++.c1 span {
++  font-size: 14px;
++}
++/* 공지사항 */
++.notice li:nth-child(even) {
++  background-color: antiquewhite;
++}
++.notice li a {
++  display: flex;
++  justify-content: space-between;
++  gap: 30px;
++  padding: 5px;
++  border-bottom: 1px solid #cecece;
++}
++.notice {
++  width: calc(100% - 20px);
++}
++.notice-txt {
++  width: 70%;
++  height: 20px;
++  overflow: hidden;
++}
++/* 갤러리 */
++.gallery {
++  width: calc(100% - 20px);
++  display: flex;
++  justify-content: space-around;
++}
++/* 배너 */
++.c2 {
++  position: relative;
++}
++.c2 a {
++  width: 100%;
++  height: 100%;
++  overflow: hidden;
++}
++.c2 a img {
++}
++.c2 span {
++  position: absolute;
++  top: 50%;
++  left: 50%;
++  transform: translate(-50%, -50%);
++  padding: 10px 30px;
++  font: 20px "arial";
++  color: #fff;
++  background-color: rgba(0, 0, 0, 0.5);
++}
++/* 바로가기 */
++.c3 {
++  position: relative;
++}
++.c3 a {
++  width: 100%;
++  height: 100%;
++  overflow: hidden;
++}
++.c3 span {
++  position: absolute;
++  top: 50%;
++  left: 50%;
++  transform: translate(-50%, -50%);
++  padding: 10px 30px;
++  font: 20px "arial";
++  color: #fff;
++  background-color: rgba(0, 0, 0, 0.5);
+ }
+ /* 하단 / D */
+ .footer {
++  display: flex;
++  justify-content: space-around;
+   width: 100%;
+   height: 100px;
+   background-color: rgb(255, 247, 0);
+ }
++/* ft-logo */
++.ft-logo {
++  width: 200px;
++  height: 100%;
++  padding: 10px;
++  background-color: aqua;
++}
++.ft-logo a {
++  line-height: 100px;
++}
++.ft-logo a img {
++  width: 100%;
++  filter: grayscale(1);
++}
++/* ft-copy */
++.ft-copy {
++  width: 900px;
++  height: 100%;
++  background-color: rgb(21, 255, 0);
++}
++.bottom_menu {
++  width: 60%;
++  line-height: 50px;
++  /* height: 50px; */
++  display: flex;
++  margin: auto;
++  padding: 10px 0;
++  background-color: blanchedalmond;
++}
++.bottom_menu li {
++  width: calc(100% / 3);
++  line-height: 30px;
++  text-align: center;
++  border-right: 1px solid #ddd;
++}
++.ft-copy p {
++  width: 100%;
++  text-align: center;
++  line-height: 50px;
++  background-color: brown;
++}

@@ -1,0 +1,307 @@
+@charset "uft-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+/* 모달창 */
+/* 전체 영역 */
+.wrap {
+  width: 1200px;
+  height: 700px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+/* 상단 / A */
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex; /*자식들 가로 정렬할 때*/
+  background-color: aqua;
+}
+/* 로고 */
+.logo {
+  width: 200px; /* % 사용 가능*/
+  height: 100%;
+  padding: 10px;
+  line-height: 100px;
+  text-align: center;
+  background-color: rgb(55, 117, 80);
+}
+.logo a img {
+  width: 100%;
+}
+/* 메뉴 */
+.nav {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  background-color: rgb(178, 182, 64);
+}
+/* 메인 메뉴 */
+.gnb {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 600px;
+  height: 50px;
+  display: flex;
+  background-color: rgb(76, 76, 132);
+<<<<<<< HEAD
+=======
+  z-index: 9;
+>>>>>>> ab30fc1 (컨텐츠, 하단)
+}
+.gnb > li > a {
+  width: calc(600px / 4);
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
+.gnb > li:hover > a {
+  background-color: black;
+  color: #fff;
+}
+.gnb > li:hover .depth2 {
+  display: block;
+}
+/*서브메뉴 전체 나오게 할 때*/
+/* .gnb:hover .depth2{
+    display: block;
+} */
+/* 서브 메뉴 */
+.depth2 {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+.depth2 > li > a {
+  padding: 10px 0;
+}
+.depth2 > li > a:hover {
+  background-color: #333;
+  color: #fff;
+}
+/* 비주얼 / B */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(106, 0, 255);
+}
+.slide-all {
+  height: 300px;
+}
+.slide-all > li {
+  height: 100%;
+  position: absolute;
+}
+.slide-all > li > a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide-all > li > a > img {
+  display: block; /*이미지 밑에 작은 빈틈 없애는 법*/
+  width: 100%;
+}
+.slide-all > li > a > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+/* 콘텐츠 / C */
+.contents {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(255, 0, 170);
+<<<<<<< HEAD
+}
+/* 하단 / D */
+.footer {
+=======
+  display: flex;
+}
+.c {
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 10px;
+}
+/* 공지사항 / 갤러리 */
+.c1 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  background-color: #fff;
+}
+.c1 h4 {
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background-color: blueviolet;
+}
+.c1 h4.on {
+  background-color: crimson;
+}
+.c1 > ul {
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  padding: 10px;
+  display: none;
+}
+.c1 ul.on {
+  display: block;
+}
+.c1 span {
+  font-size: 14px;
+}
+/* 공지사항 */
+.notice li:nth-child(even) {
+  background-color: antiquewhite;
+}
+.notice li a {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 5px;
+  border-bottom: 1px solid #cecece;
+}
+.notice {
+  width: calc(100% - 20px);
+}
+.notice-txt {
+  width: 70%;
+  height: 20px;
+  overflow: hidden;
+}
+/* 갤러리 */
+.gallery {
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-around;
+}
+/* 배너 */
+.c2 {
+  position: relative;
+}
+.c2 a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.c2 a img {
+}
+.c2 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  font: 20px "arial";
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* 바로가기 */
+.c3 {
+  position: relative;
+}
+.c3 a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.c3 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  font: 20px "arial";
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* 하단 / D */
+.footer {
+  display: flex;
+  justify-content: space-around;
+>>>>>>> ab30fc1 (컨텐츠, 하단)
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 247, 0);
+}
+<<<<<<< HEAD
+=======
+/* ft-logo */
+.ft-logo {
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  background-color: aqua;
+}
+.ft-logo a {
+  line-height: 100px;
+}
+.ft-logo a img {
+  width: 100%;
+  filter: grayscale(1);
+}
+/* ft-copy */
+.ft-copy {
+  width: 900px;
+  height: 100%;
+  background-color: rgb(21, 255, 0);
+}
+.bottom_menu {
+  width: 60%;
+  line-height: 50px;
+  /* height: 50px; */
+  display: flex;
+  margin: auto;
+  padding: 10px 0;
+  background-color: blanchedalmond;
+}
+.bottom_menu li {
+  width: calc(100% / 3);
+  line-height: 30px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+.bottom_menu li:last-child{
+  border: none;
+}
+/* .bottom_menu li::after{
+  content: "";
+ border: 1px solid red;
+ height: 10px;
+ position: absolute;
+ top:50%;
+ transform: translatey(-50%);
+ right: 0;
+
+}
+.bottom_menu li:last-child::after{
+  border: none;
+} */
+.ft-copy p {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  background-color: brown;
+}
+>>>>>>> ab30fc1 (컨텐츠, 하단)
